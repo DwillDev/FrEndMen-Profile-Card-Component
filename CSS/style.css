@@ -40,7 +40,7 @@ body{
 }
 
 header{
-    background: url(images/bg-pattern-card.svg);
+    background: url(https://naiwilliams.github.io/Profile-Card-Component/images/bg-pattern-card.svg);
     background-size: cover;
     height:15rem;
     border-radius: 2rem 2rem 0 0;
