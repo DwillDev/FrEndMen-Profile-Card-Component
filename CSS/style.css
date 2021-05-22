@@ -1,0 +1,157 @@
+html,body{
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    font-size:62.5%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+    background-color: hsl(185, 75%, 39%);    
+}
+
+#bubble1, #bubble2{
+    position:fixed;
+    z-index:-1;
+}
+
+#bubble1{
+    right:-76rem;
+    bottom:-59rem;
+}
+
+#bubble2{
+    left:-76rem;
+    top:-59rem;
+}
+
+.card{
+    margin:auto;
+    max-height:40rem;
+    min-height:28rem;
+    border-radius: 2rem;
+    background: white;
+    display:grid;
+    grid-template: 1fr 1fr 1fr / minmax(20rem,38rem);
+    grid-template-areas:"h"
+                        "p"
+                        "s";
+}
+
+header{
+    background:url(/images/bg-pattern-card.svg);
+    background-size: cover;
+    height:15rem;
+    border-radius: 2rem 2rem 0 0;
+    grid-area: "h";
+}
+
+.personal{
+    height:100%;
+    grid-area: "p";
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon{
+    margin-top:-6rem;
+    height:96px;
+    width:96px;
+    border-radius: 50%;
+    border:7px solid white;  
+}
+
+.info{
+    margin-top: 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.age{
+    font-size:1.85rem;
+    padding-left:1rem;
+}
+
+.location{
+    font-size:1.4rem;
+    padding-top: 1rem;
+
+}
+
+
+hr{
+    border-top: .9px solid hsla(227, 10%, 81%, .1);
+    position:relative;
+    top:-10%;
+    
+}
+
+.statistics{
+    padding-top:1rem;
+    height:100%;
+    display:flex;
+    justify-content: space-evenly;
+    grid-area:s;
+    text-align: center;
+}
+
+.stat-heading{
+    font-size:.9rem;
+    letter-spacing: .2rem;
+    padding-top: .5rem;
+}
+
+
+.name, .stat-number{
+    font-weight: 700;
+    font-size:1.9rem;
+    color: hsl(229, 23%, 23%);
+}
+
+.age, .location, .stat-heading{
+    font-weight:400;
+    color: hsl(227, 10%, 46%);
+
+}
+
+@media screen and (min-width:500px) and (max-width:899px) {
+    #bubble1{
+        right:-56rem;
+        bottom:-59rem;
+    }
+    
+    #bubble2{
+        left:-56rem;
+        top:-59rem;
+    }
+
+}
+
+@media screen and (min-width:900px) {
+    #bubble1{
+        right:-25rem;
+        bottom:-60rem;
+    }
+    
+    #bubble2{
+        left:-25rem;
+        top:-50rem;
+    }
+    
+}
+
+@media screen and (min-width:2000px) {
+    #bubble1{
+        right:-15rem;
+        bottom:-55rem;
+    }
+    
+    #bubble2{
+        left:-15rem;
+        top:-50rem;
+    }
+    
+}
